@@ -1,10 +1,19 @@
+/**
+ * The first line in the build configuration applies the Android plugin for
+ * Gradle to this build and makes the android block available to specify
+ * Android-specific build options.
+ */
+
 plugins {
     id("com.android.application")
     id("kotlin-android")
     id("kotlin-android-extensions")
 }
 
-
+/**
+ * The android block is where you configure all your Android-specific
+ * build options.
+ */
 android {
     compileSdkVersion(29)
     defaultConfig {
